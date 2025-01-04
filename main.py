@@ -1,8 +1,8 @@
 '''
 Let
-s(snake) = -1
-w(water) = 0
-g(gun) = 1
+r(rock) = -1
+p(paper) = 0
+s(scissor) = 1
 
 '''
 
@@ -10,8 +10,8 @@ import random                                # Importing random module to genera
 
 computer = random.choice([-1,0,1])               # Using random module to generate a random number
 youStr = input("Enter your choice: ").lower()
-youDict  = {"s":-1 ,"w":0 ,"g":1}              
-reverseDict = {-1:"Snake", 0:"Water", 1:"Gun"}        # Using reverseDict to call youDict for more convinience
+youDict  = {"r":-1 ,"p":0 ,"s":1}              
+reverseDict = {-1:"Rock", 0:"Paper", 1:"Scissor"}        # Using reverseDict to call youDict for more convinience
 
 you = youDict[youStr]                                  
 
@@ -46,7 +46,7 @@ else:
         print("Error, seems something went wrong...")
 
 
-print("Thank you for playing the SWG Game") 
+print("Thank you for playing the Rock Paper Scissor Game") 
 
 
     # Programme Ends here
